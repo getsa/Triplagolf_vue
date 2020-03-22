@@ -1,10 +1,11 @@
 # triplagolfapp
 
 ## Project setup
+Ainakin nämä:
 ```
-npm install 
+npm install vue-cli, vuex, vue-router, bootstrap-vue, firebase, vuex-router-sync
 ```
-Ainakin: vue-cli, vuex, vue-router, bootstrap-vue, firebase
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve

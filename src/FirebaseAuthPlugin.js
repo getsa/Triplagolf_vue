@@ -1,7 +1,6 @@
 import store from './store'
 import Firebase from 'firebase'
 
-// firebase init goes here
 let config = {
     apiKey: "AIzaSyAEaRb-PxgqlQKR3w94m60SahLZW8Y5CUo",
     authDomain: "triplagolf.web.app",
@@ -35,7 +34,7 @@ export default {
         console.log(auth.currentUser.email);
       }
       else {
-        console.log("user logged out");
+        console.log("user is logged out");
       }
       store.commit('updateUser',{ user })
       

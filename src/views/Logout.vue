@@ -9,9 +9,9 @@
 <script>
   export default {
   async mounted () {
-    console.log("Logout pressed");
+    console.log("Logout activated");
     await this.$auth.logout()
-    //this.$router.replace({name: 'signout'})
+    //this.$router.replace({name: 'home'})
   }
 }
 </script>
