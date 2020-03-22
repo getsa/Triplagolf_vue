@@ -1,11 +1,9 @@
 <template>
   <div id="login">
     <section>
-      <div class="col1">
-        <h1>Triplagolf app</h1>
-      </div>
       <div class="col2">
-        <button @click="loginFun"> Log In </button>
+        <img  @click="loginFun" v-show="!user" :to="{name: 'signin'}" src="..\assets\btn_google_signin_dark_normal_web.png">
+        <!-- <button @click="loginFun" v-show="!user" > Google Login button here </button> -->
       </div>
     </section>
   </div>
@@ -14,6 +12,7 @@
 
 <script>
 import {mapGetters} from 'vuex'
+import store from '../store.js'
 export default {
   computed: {
     ...mapGetters(['user']),
@@ -45,9 +44,10 @@ export default {
 </script>
 
 <style scoped>
-/*body {
-        /* background-image: url('assets/background_blur.jpg'); 
-    }*/
+#login {
+  margin-top: 60px;
+  /* background-image: url('assets/background_blur.jpg');  */
+}
 </style>
 
 

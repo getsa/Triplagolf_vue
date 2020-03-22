@@ -1,8 +1,8 @@
 <template>
     <div>
         <!-- <img id="logo" alt="Vue logo" src="../assets/triplagolf.gif"> -->
-        <h4> StartScreen </h4>
-        <!-- <img src='../assets/btn_google_signin_dark_disabled_web.png' class="login_button_img"  alt="login_disabled"> -->
+        <img id='logo' src='../assets/triplagolf.gif' >
+        <h4> Start menu goes here if looged in </h4>
     </div>
 </template>
 

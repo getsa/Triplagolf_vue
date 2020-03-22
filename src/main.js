@@ -13,7 +13,7 @@ import './../node_modules/bootstrap/dist/js/bootstrap.min.js'
 
 
 // import "w3.css"
-// import "styles/styles.css"
+ import "./styles/styles.css"
 // import "styles/grids.css"
 // import "https://fonts.googleapis.com/icon?family=Material+Icons"
 // import "https://fonts.googleapis.com/css?family=Lobster"

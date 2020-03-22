@@ -6,11 +6,9 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state: {
         user: {
-            loggedIn: false,
             data: null
         },
         game: {
-            gameStatus: "None",
             data: null
         }     
         //loginState: 'logged out',

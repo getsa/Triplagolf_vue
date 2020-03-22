@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from './store.js'
-import Login from '@/views/Login.vue'
+//import Login from '@/views/Login.vue'
 import Logout from '@/views/Logout.vue'
 import Startmenu from '@/views/Startmenu.vue'
 import Profile from '@/views/Profile.vue'
@@ -20,11 +20,6 @@ const router = new Router({
 			path: '/',
 			name: 'home',
 			component: Startmenu
-		},
-		{
-			path: '/signin',
-			name: 'signin',
-			component: Login
 		},
 		{
 			path: '/signout',
@@ -70,8 +65,10 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
 	if (to.matched.some(record => record.meta.authRequred)) {
 		if (!store.state.user) {
+			console.log('Redirect to login');
+			
 			next({
-				path: '/login',
+				path: '/',
 				query: { redirect: to.fullPath }
 			})
 		} else {
