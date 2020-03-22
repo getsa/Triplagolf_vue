@@ -2,9 +2,9 @@
 
 ## Project setup
 ```
-npm install
+npm install 
 ```
-
+Ainakin: vue-cli, vuex, vue-router, bootstrap-vue, firebase
 ### Compiles and hot-reloads for development
 ```
 npm run serve
