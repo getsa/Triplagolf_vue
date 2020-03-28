@@ -10,6 +10,7 @@ let config = {
     messagingSenderId: "480785382183"
 };
 
+
 export default {
   install: (Vue, options) => {
     const firebase = Firebase.initializeApp(config)
@@ -26,17 +27,20 @@ export default {
       },
       logout: async () => {
         await auth.signOut()
-      }
+      }      
     }
+
     auth.onAuthStateChanged(user => {
       if (auth.currentUser) {
         console.log('User logged in with email:');
         console.log(auth.currentUser.email);
+        console.log(user);
       }
       else {
         console.log("user is logged out");
       }
       store.commit('updateUser',{ user })
+      console.log(user);
       
     })
   }

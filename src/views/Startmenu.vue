@@ -1,7 +1,16 @@
 <template>
-    <div>
+    <div id='StartScreen'> 
         <!-- <img id="logo" alt="Vue logo" src="../assets/triplagolf.gif"> -->
-        <img id='logo' src='../assets/triplagolf.gif' >
+        
+
+        <div id="Live">
+            <h1> Triplagolf </h1>
+            <h3> Live seuranta </h3>
+            <p> Seuraa peliä </p>
+            <b-button variant="primary" href="#">Live</b-button>
+
+        </div>
+
         <b-overlay :show="show" rounded="sm">
             <div id='button-group'>
                 <b-button class="bbtn" v-b-modal.modal-1> Liity Triplagolffiin </b-button>
@@ -10,6 +19,8 @@
                 <b-button class="bbtn"> Asetukset </b-button>
             </div>
         </b-overlay>
+
+
 
         <b-modal centered  id="modal-1" title="Triplagolf 2020" hide-footer>
             <div class=" d-block text-center"> 
@@ -26,6 +37,8 @@
 </template>
 
 <script>
+
+
 export default {
     name: 'startmenu',
     data() {
@@ -43,6 +56,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#Live{
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+#StartScreen{
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .modal-backdrop {
     position: fixed;
     top: 0;
@@ -59,11 +86,9 @@ export default {
     padding: 2%;
 }
 
-h4{
-    margin: 20px 0 0;
-}
 #logo {
-  width: 100%;
+  width: 50%;
+  padding-top: 30px;
 }
 </style>
 
